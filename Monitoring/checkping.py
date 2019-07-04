@@ -8,7 +8,7 @@ from datetime import datetime, date, timedelta, time
 #Send message function.
 def msg2slack(msg):
 #Url from slack to indicate the channel.
-    url = "https://hooks.slack.com/services/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" 
+    url = slack url
     payload = {
                "text": msg,
                "icon_emoji": ":computer:"}
@@ -19,7 +19,7 @@ def msg2slack(msg):
 
 #Function to check ping and insert alerts into DB.
 def main():
-    hosts = ["192.168.100.180", "192.168.100.20"]
+    hosts = [ip]
     today = datetime.today().replace(second=0, microsecond=0)
 
     for hostname in hosts:
@@ -46,7 +46,7 @@ def main():
 
 #Function to analyze DB with alerts and check if send or not send a alert message.
 def message():
-    hosts = ["192.168.100.180", "192.168.100.20"]
+    hosts = [ip]
     today = datetime.today().replace(second=0, microsecond=0)
     con = sql.connect("alerts.db")
     conn=sql.connect("momento.db")
