@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import sqlite3 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/andreyoshdia/Desktop/Monitoring/date.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/...'
 db = SQLAlchemy(app)
 #Script to create DB to receive information of day and hour and hostname from alert.
 conn = sqlite3.connect('momento.db')
