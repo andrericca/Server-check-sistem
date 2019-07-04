@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import sqlite3 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/andreyoshdia/Desktop/Monitoring/alerts.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/...'
 db = SQLAlchemy(app)
 #Script to create DB to receive alerts and time.
 conn = sqlite3.connect('alerts.db')
