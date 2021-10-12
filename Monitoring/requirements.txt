@@ -31,7 +31,7 @@ Mako==1.0.8
 MarkupSafe==1.1.1
 nltk==3.4.1
 numpy==1.16.2
-opencv-python==3.4.4.19
+opencv-python==3.4.7.28
 optional-django==0.1.0
 pandas==0.23.4
 parso==0.4.0
