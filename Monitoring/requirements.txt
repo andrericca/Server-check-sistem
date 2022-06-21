@@ -30,7 +30,7 @@ linecache2==1.0.0
 Mako==1.0.8
 MarkupSafe==1.1.1
 nltk==3.4.1
-numpy==1.16.2
+numpy==1.22.0
 opencv-python==3.4.4.19
 optional-django==0.1.0
 pandas==0.23.4
